@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn + Act - Use Maker Notes</title>
+    <meta name="theme-color" content="#210d26" />
+    <meta name="description" content="Leverage what works for Makers with successful statups and put it in action with a personal assistant. For Free.">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="sumary_large_image" />
+    <meta name="twitter:site" content="@useMakerNotes" />
+    <meta name="twitter:title" content="Learn + Act - Use Maker Notes" />
+    <meta name="twitter:creator" content="@toheebdotcom" />
+    <meta name="twitter:description" content="Leverage what works for Makers with successful statups and put it in action with a personal assistant. For Free." />
+    <meta name="twitter:image" content="/img/umn-twitter-card.jpg" />
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <style>
+
+        * {
+            margin: 0;
+        }
+
+        html {
+            display: flex;
+            min-height: 100%;
+        }
+
+        .visually-hidden:not(:focus):not(:active) {
+            clip: rect(0 0 0 0);
+            clip-path: inset(50%);
+            height: 1px;
+            width: 1px;
+            overflow: hidden;
+            position: absolute;
+        }
+
+        /* ******************************************
+        ******* P A G E
+        ******************************************* */
+        .page {
+            font: 18px/1.8 -apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            padding: 1.5rem;
+            background-color: #210d26;
+            color: #ab9fae;
+
+            margin: auto;
+            background: #210d26 radial-gradient(circle, 
+                transparent 58%, hsl(288deg 29% 13%) 58%, hsl(288deg 29% 13%) 58.2%, transparent 58.2%, 
+                transparent 78%, hsl(288deg 29% 13%) 78%, hsl(288deg 29% 13%) 78.2%, transparent 78.2%,
+                transparent 98%, hsl(288deg 29% 13%) 98%, hsl(288deg 29% 13%) 98.2%, transparent 98.2%);
+        }
+
+
+        /* ******************************************
+        ******* H E A D E R
+        ******************************************* */
+
+        .site-name {
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.12rem;
+            background-image: linear-gradient(to left, #987b2e 0%, transparent 10%);
+            line-height: 1;
+        }
+
+        .headline {
+            font-size: 3rem;
+            line-height: 1.25;
+            font-weight: 100;
+            margin: 1.5rem 0 1.8rem -0.18rem;
+            position: relative;
+            color: white;
+            max-width: 640px;
+            overflow: hidden;
+        }
+
+        .headline::after {
+            content: '\02591';
+            font-size: 6rem;
+            position: absolute;
+            bottom: 2rem;
+            right: -2rem;
+            opacity: 0.05;
+        }
+
+        .headline__subject {
+            font-weight: 400;
+            color: #be0eeb;
+        }
+
+        .headline__period {
+            color: #847e86;
+        }
+
+        .headline__hook {
+            font-family: 'Dancing Script', 'Brush Script MT', script;
+            display: inline-block;
+            font-weight: normal;
+            color: #ff0eeb;
+            background: linear-gradient(to right, #be0eeb, #ff0eeb, #ff0e9b, #be0eeb);
+            background-size: 200%;
+            background-clip: text;
+            -webkit-background-clip: text;
+            text-fill-color: transparent;
+            -webkit-text-fill-color: transparent;
+
+            animation: revolveColors 1s linear infinite;
+        }
+
+        
+        @keyframes revolveColors {
+            to {
+                background-position: 200% center;
+            }
+        }
+
+
+        
+        /* ******************************************
+        ******* S U B H E A D L I N E
+        ******************************************* */
+
+        .subheadline {
+            max-width: 768px;
+            margin: auto;
+        }
+
+        .subheadline-steps {
+            margin: 1rem 0 3rem;
+        }
+
+        .subheadline-steps > li {
+            margin: 0 0 1rem 0;
+        }
+
+
+        /* ******************************************
+        ******* S U B S C R I B E  
+        ******************************************* */
+
+        
+        .subscribe-form__email,
+        .subscribe-form__submit {
+            height: 2.5rem;
+            font-size: 1rem;
+            border-radius: 6px;
+            border: 2px solid #ff0eeb;
+            padding: 0 0.5rem;
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 0.5rem;;
+        }
+
+        .subscribe-form__email {
+            background: transparent;
+            color: white;
+        }
+
+        .subscribe-form__submit {
+            background: #be0eeb linear-gradient(to left, #be0eeb, #ff0eeb );
+            color: white;
+            font-size: 0.75rem;
+            letter-spacing: 0.08rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            padding: 0 1rem;
+            border: 0;
+            cursor: pointer;
+        }
+        
+        .subscribe-form__submit:hover {
+            background: transparent;
+            background: #be0eeb linear-gradient(to left, #73098d, #9b098f );
+        }
+
+        .subscribe-form__legal {
+            font-size: 0.75rem;
+            text-align: center;
+            color: #847e86;
+        }
+
+        .subscribe-form__legal > a {
+            color: inherit;
+        }
+
+        
+
+        /* ******************************************
+        ******* D E M A R C A T O R
+        ******************************************* */
+
+        .fonticon-container {
+            text-align: center;
+            position: relative;
+            margin: 0 0 1.5rem 0;
+        }
+
+        .fonticon-container:after {
+            content: '';
+            position: absolute;
+            bottom: 0.9rem;
+            display: block;
+            height: 1px;
+            width: 100%;
+            z-index: -10;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(238, 176, 15, 0.75), rgba(0,0,0,0));
+        }
+
+        .fonticon {
+            width: 100%;
+            font-size: 3rem;
+            line-height: 0.5;
+            text-align: center;
+            color: #eeb00f;
+            background-color: #210d26;
+            padding: 0;
+            font-family: 'Dancing Script', 'Brush Script MT', script;
+        }
+        
+
+        @media screen and (min-width: 768px) {
+
+            /* ****************************
+            ******* H E A D E R
+            ***************************** */
+
+            .site-name {
+                background-image: none;
+                text-align: center;
+            }
+
+            .headline {
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .headline::after {
+                content: '';
+            }
+
+            .subheadline-steps {
+                columns: 2;
+            }
+
+            .subheadline-steps > li {
+                min-height: 80px;
+                margin: 0 1rem;
+            }
+
+            .subheadline-steps > li::marker {
+                color: #eeb00f;
+            }
+
+
+
+            /* ****************************
+            ******* S U B S C R I B E
+            ***************************** */
+
+            .subscribe-form {
+                display: flex;
+                max-width: 480px;
+                margin: auto;
+            }
+
+            .subscribe-form__email {
+                flex: 1;
+                border-radius: 4px 0 0 4px;
+                border-right: 0;
+                width: initial;
+            }
+            
+            .subscribe-form__submit {
+                border-radius: 0 4px 4px 0;
+                width: initial;
+            }
+
+            .subscribe-form__email::placeholder {
+                color: #847e86;
+            }
+            
+
+        }
+
+    </style>
+</head>
+
+<body class="page">
+    <header>
+        <div class="site-name">Maker Notes</div>
+        <h1 class="headline">Learn from <span class="headline__subject">Experts</span> on Building Profitable Startups<span class="headline__period">.</span> <span class="headline__hook">For Free</span></h1>
+    </header>
+
+    <div aria-hidden="true" class="fonticon-container">
+        <span class="fonticon">r</span>
+    </div>
+
+    <article class="subheadline">
+        <h2 class="visually-hidden">How it works</h2>
+        Every 2 weeks, I:
+        <ol class="subheadline-steps">
+            <li>Pick a topic <em>of interest to the community</em></li>
+            <li>Make thorough research and write a precise guide based on experience of successful makers </li>
+            <li>Make an Operating System to help you take action and put the guide to use</li>
+            <li>Share the guide publicly on the blog. And the OS to subscribers<span title="at a Pay What You Want Fee">*</span></li>
+        </ol>
+    </article>
+
+    <section>
+        <h2 class="visually-hidden">How to Subscribe</h2>
+        <form class="subscribe-form" action="https://www.getrevue.co/profile/useMakerNotes/add_subscriber" method="post" id="revue-form"
+            name="revue-form" target="_blank">
+    
+            <input class="subscribe-form__email" placeholder="Your email address..." type="email" name="member[email]"
+            id="member_email">
+            <input class="subscribe-form__submit" type="submit" value="Join the Waitlist" name="member[subscribe]" id="member_submit">
+    
+        </form>
+        <p class="subscribe-form__legal">By subscribing, you agree with Revue’s <a target="_blank"
+            href="https://www.getrevue.co/terms">Terms</a> and <a target="_blank"
+            href="https://www.getrevue.co/privacy">Privacy Policy</a>.</p>
+    </section>
+</body>
+
+</html>
