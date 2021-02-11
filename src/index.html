@@ -58,6 +58,11 @@
             position: absolute;
         }
 
+        .bold-text {
+            font-weight: normal;
+            color: #a06fad;
+        }
+
         /* ******************************************
         ******* P A G E
         ******************************************* */
@@ -145,12 +150,13 @@
         ******************************************* */
 
         .subheadline {
-            max-width: 768px;
+            max-width: 720px;
             margin: auto;
         }
 
         .subheadline-steps {
             margin: 1rem 0 3rem;
+            padding: 0 0 0 2rem;
         }
 
         .subheadline-steps > li {
@@ -272,7 +278,6 @@
             }
 
             .subheadline-steps > li {
-                min-height: 80px;
                 margin: 0 1rem;
             }
 
@@ -325,10 +330,8 @@
         <h2 class="visually-hidden">How it works</h2>
         Every 2 weeks, I:
         <ol class="subheadline-steps">
-            <li>Pick a topic <em>of interest to the community</em></li>
-            <li>Make thorough research and write a precise guide based on experience of successful makers </li>
-            <li>Make an Operating System to help you take action and put the guide to use</li>
-            <li>Share the guide publicly on the blog. And the OS to subscribers <span title="at a Pay What You Want Fee">*</span></li>
+            <li>Bundle hours of <strong class="bold-text">research</strong> into a precise, and complete <strong class="bold-text">guide</strong></li>
+            <li>Create an <strong class="bold-text">action</strong> plan to help you get result from the guide</li>
         </ol>
     </article>
 
@@ -340,7 +343,7 @@
     
             <input class="subscribe-form__email" placeholder="Your email address..." type="email" name="member[email]"
             id="member_email">
-            <input class="subscribe-form__submit" type="submit" value="Join the Waitlist" name="member[subscribe]" id="member_submit">
+            <input class="subscribe-form__submit" type="submit" value="Join Waitlist" name="member[subscribe]" id="member_submit">
     
         </form>
         <p class="subscribe-form__legal">By subscribing, you agree with Revue’s <a target="_blank"
